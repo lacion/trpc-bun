@@ -17,11 +17,11 @@
 		"LICENSE.txt"
 	],
 	"scripts": {
-		"test": "bun test",
-		"lint": "biome lint .",
-		"format": "biome format --write .",
-		"typecheck": "tsc -p tsconfig.json --noEmit",
-		"build": "tsc -p tsconfig.build.json",
+		"test": "bun test --coverage",
+		"lint": "bunx biome lint .",
+		"format": "bunx biome format --write .",
+		"typecheck": "bunx tsc -p tsconfig.json --noEmit",
+		"build": "bunx tsc -p tsconfig.build.json",
 		"bundle": "bun build ./src/index.ts --outdir ./dist"
 	},
 	"keywords": [
